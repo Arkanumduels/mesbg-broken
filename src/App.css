@@ -1,0 +1,341 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background: #1a1a1a;
+  color: white;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.setup-form {
+  background: #2a2a2a;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  max-width: 400px;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #fff;
+  font-size: 2rem;
+}
+
+.input-label {
+  display: block;
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+}
+
+.number-input {
+  width: 100%;
+  padding: 12px;
+  margin-top: 8px;
+  border: 2px solid #444;
+  border-radius: 8px;
+  background: #333;
+  color: white;
+  font-size: 1.2rem;
+  transition: border-color 0.3s ease;
+}
+
+.number-input:focus {
+  outline: none;
+  border-color: #666;
+}
+
+.start-button {
+  width: 100%;
+  padding: 16px;
+  background: linear-gradient(135deg, #4a90e2, #2d5aa3);
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.start-button:hover {
+  transform: translateY(-2px);
+}
+
+.counter-container {
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+}
+
+.status-text {
+  margin-bottom: 2rem;
+  color: #888;
+  font-size: 1.2rem;
+}
+
+.casualty-button {
+  width: 100%;
+  height: 300px;
+  border: none;
+  border-radius: 24px;
+  background: linear-gradient(135deg, #4a90e2, #2d5aa3);
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.casualty-button:hover {
+  transform: scale(1.02);
+}
+
+.casualty-button.quartered {
+  background: linear-gradient(135deg, #333, #000);
+}
+
+.casualty-button.broken {
+  background: linear-gradient(135deg, #ff4444, #cc0000);
+}
+
+.count {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.label {
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+}
+
+.reset-button {
+  margin-top: 2rem;
+  padding: 12px 24px;
+  background: none;
+  border: 2px solid #444;
+  border-radius: 8px;
+  color: #888;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.reset-button:hover {
+  border-color: #666;
+  color: #fff;
+}
+
+@media (max-width: 480px) {
+  .casualty-button {
+    height: 250px;
+    border-radius: 16px;
+  }
+  
+  .count {
+    font-size: 3.5rem;
+  }
+}
+
+/* Hero Management Styles */
+.form-section {
+  background: #2a2a2a;
+  padding: 1.5rem;
+  border-radius: 12px;
+  margin: 1rem 0;
+}
+
+.hero-form {
+  background: #333;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.stat-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.stat-input {
+  display: flex;
+  flex-direction: column;
+}
+
+.stat-input label {
+  font-size: 0.9rem;
+  color: #888;
+  margin-bottom: 0.5rem;
+}
+
+.hero-input {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  background: #444;
+  border: 1px solid #555;
+  border-radius: 6px;
+  color: white;
+}
+
+.add-hero-button {
+  width: 100%;
+  padding: 0.8rem;
+  background: #4a4a4a;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.add-hero-button:hover {
+  background: #5a5a5a;
+}
+
+.hero-preview {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.hero-badge {
+  background: #4a90e2;
+  padding: 0.3rem 0.8rem;
+  border-radius: 15px;
+  font-size: 0.9rem;
+}
+
+/* Hero Cards in Battle View */
+.heroes-section {
+  width: 100%;
+  margin-top: 2rem;
+  display: grid;
+  gap: 1rem;
+}
+
+.hero-card {
+  background: #2a2a2a;
+  padding: 1.5rem;
+  border-radius: 12px;
+}
+
+.hero-name {
+  color: #4a90e2;
+  margin-bottom: 1rem;
+}
+
+.hero-stats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.hero-stat {
+  background: #333;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.stat-label {
+  color: #888;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.stat-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.stat-controls button {
+  width: 35px;
+  height: 35px;
+  border: none;
+  border-radius: 6px;
+  background: #4a4a4a;
+  color: white;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.stat-controls button:disabled {
+  background: #333;
+  cursor: not-allowed;
+}
+
+.stat-value {
+  font-weight: bold;
+  min-width: 50px;
+  text-align: center;
+}
+
+@media (max-width: 480px) {
+  .stat-grid,
+  .hero-stats {
+    grid-template-columns: 1fr;
+  }
+  
+  .stat-controls button {
+    width: 30px;
+    height: 30px;
+  }
+}
