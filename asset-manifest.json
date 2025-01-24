@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/mesbg-broken/static/css/main.a44b324d.css",
+    "main.js": "/mesbg-broken/static/js/main.4a8cf39d.js",
+    "static/js/488.777cb4af.chunk.js": "/mesbg-broken/static/js/488.777cb4af.chunk.js",
+    "index.html": "/mesbg-broken/index.html",
+    "main.a44b324d.css.map": "/mesbg-broken/static/css/main.a44b324d.css.map",
+    "main.4a8cf39d.js.map": "/mesbg-broken/static/js/main.4a8cf39d.js.map",
+    "488.777cb4af.chunk.js.map": "/mesbg-broken/static/js/488.777cb4af.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a44b324d.css",
+    "static/js/main.4a8cf39d.js"
+  ]
+}
